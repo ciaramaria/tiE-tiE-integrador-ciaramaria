@@ -214,6 +214,18 @@ body {
     .navbar i {
         display: block;
     }
+    #toggle-menu:checked + .navbar-list {
+    
+        display:none;
+    }
+    input {
+        display: none;
+        
+    }
+
+    .navbar  {
+        /* display: flex; */
+    }
 
     .navbar-list {
     position: absolute;
@@ -223,13 +235,12 @@ body {
     right: 0;
     width: 100%;
     height: calc(100vh - 100px); /*para que siempre este al 100 en la pantalla*/
+    /*z-index: 9999;*/ /*para que este encima de todo*/
     display: none;
-    z-index: 9999; /*para que este encima de todo*/
+
 }
 
-#toggle-menu:checked + .navbar-list {
-    display: flex;
-}
+
 
 
 }    
