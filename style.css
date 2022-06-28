@@ -130,9 +130,9 @@ body {
 
 
 .navbar .navbar-list {
-    display: none;
-    align-items: center;
-    justify-content: center;
+    /* display: none; */
+    /* align-items: center;
+    justify-content: center; */
     list-style:none;
 }
 .navbar-list {
@@ -234,6 +234,13 @@ body {
         display:flex;
     }
    
+    .navbar .navbar-list {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        list-style:none;
+        
+    }
 
 
     .navbar-list {
@@ -285,6 +292,10 @@ body {
     gap:90px;
 }
 
+.text-container {
+    max-width: max(40%, 300px);
+}
+
 .text-container p {
     max-width: max(40% 300px);
     font-size: 25px;
@@ -304,9 +315,21 @@ body {
 
 
 
+
 .btn-primary {
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* .hero {
