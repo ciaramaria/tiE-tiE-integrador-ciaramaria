@@ -102,6 +102,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.51);
 }
 
 /* imagen logo */
@@ -119,7 +120,7 @@ body {
 /* hover logo */
 
 .logo-container img:hover {
-    filter: blur(1px);
+    filter: blur(.1px);
     padding: 2px 0px 1px 0px;
 }
 
@@ -127,14 +128,22 @@ body {
 
 /* div navbar */
 
+
 .navbar .navbar-list {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
-    list-style:none
+    list-style:none;
 }
 .navbar-list {
-    gap: 50px;
+    display: flex;
+    gap: 40px;
+}
+
+/* borde lista */
+.navbar-list li {
+    padding: 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.075);
 }
 
 /* icono navbar */
@@ -146,6 +155,7 @@ body {
     display: none;
 }
 
+/* no se ve el */
 #toggle-menu {
     display: none;
 }
@@ -159,49 +169,51 @@ body {
     text-decoration: none;
 }
 
+
+
 /* navbar a hover */
 
 .navbar li>a:hover{
-    background-color: #0d0e1436;
+    background-color: #14120d36;
+}
+
+/*border left lo sque al inicio*/
+
+.navbar-list li:first-child {
+    border: none;
 }
 
 /* navbar "inicio" */
 
-.navbar-list li:first-child > a {
-    border: 1px solid white;
-    font-size: 16px;
-    padding: 10px 45px;
-    border-radius: 3px;
-    transition: all 0.1s linear;
-    list-style:none
 
-}
 
 /* hover del navbar */
 
 .navbar-list li a:hover {
     color: wheat;
-    font-size: 19px;
-    font-weight: 900;
-    transition: all 0.2s linear;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.1s linear;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.51);
+    padding: 1px 2px;
 
 }
-
 
 
 /* hover del navbar "inicio" */
 
-.navbar-list li:first-child > a:hover {
-    background-color: rgba(255, 255, 255, 0.692);
-    color: rgba(0, 0, 0, 0.384);
-    font-size: 17px;
+.navbar-list li:first-child > a {
+    background-color: rgba(0, 0, 0, 0.055);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
     font-weight: 900;
-    transition: all 0.1s linear;
-}
+    transition: all 0.2s linear;
+    border: none;
+    border-radius: 2px;
+    text-shadow: 5px 4px 0px rgba(0,0,0,1);}
 
 
 /** media query */
-
 
 
 @media (max-width: 992px) {
@@ -214,18 +226,15 @@ body {
     .navbar i {
         display: block;
     }
+
+
+    /* checked si funka o no */
     #toggle-menu:checked + .navbar-list {
     
-        display:none;
+        display:flex;
     }
-    input {
-        display: none;
-        
-    }
+   
 
-    .navbar  {
-        /* display: flex; */
-    }
 
     .navbar-list {
     position: absolute;
@@ -236,174 +245,69 @@ body {
     width: 100%;
     height: calc(100vh - 100px); /*para que siempre este al 100 en la pantalla*/
     /*z-index: 9999;*/ /*para que este encima de todo*/
-    display: none;
 
+}
+.navbar-list li {
+    border: none;
 }
 
 
-
-
-}    
-
-
-
-
-
-
-
-
-
-
-/* header { 
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-    overflow: hidden;
-    filter: grayscale(20%);
-    padding: 1rem 1rem 5rem 1rem;        
-    
+/* .section-container {
+    background-color: var(--black);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* body {
-    font-family: 'Georama', sans-serif;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 0;
-    overflow: hidden;
-    background:var(--black) ;
-
-}
-
-a {
-    height: auto;
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-* img {
-    width: 100%;
-    max-width: 60px;
-    height: auto;
-} */
-
-/*** TERMINA POR DEFECTO  */
-
-
-
-/* header {
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-    overflow: hidden;
-    filter: grayscale(20%);
-    padding: 1rem 1rem 5rem 1rem;        
-    
-}
-
-.header:hover {
-    filter: grayscale(0%);
-}
-
-
-
-.items:first-of-type {
-    margin-left: 50px;
-} */
-
-
-
-/** menu */
-/* 
-.menu {
+.section {
     display: flex;
-    justify-content:space-between;
-    align-items:center;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 70px 0px;
+    width: 95%;
+    max-width: 1300px;
+} */
+}
+
+/**termina el media*/
+
+/**HEROOOO/***/
+
+#hero {
+    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
+    padding: 70px 50px;
 }
 
-.menu i {
-    font-size: 2.5rem;
-    color: aliceblue;
+.description-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    gap:90px;
 }
 
-.container-items {
-    width: 100%;
-    display: none;
-    order: 1;
-} */
-/* 
-.items {
-    text-align: center;
-    color: whitesmoke;  
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: .5rem 0;
-    
-} */
+.text-container p {
+    max-width: max(40% 300px);
+    font-size: 25px;
+    text-shadow: 2px 1px 0px rgba(255,255,255,0.28);    
+    font-weight: 600;
 
-/**terminadi el menu*/
+}
 
-/** main */
+.text-container h1 {
+    font-size: 93px ;
+    margin-bottom: 0px;
+    text-shadow: 3px 3px 0px rgba(255,255,255,0.67);    
+    line-height: 110px;
+    font-weight: 900;
+
+}
+
+
+
+.btn-primary {
+
+}
+
 
 /* .hero {
     background-image: linear-gradient(#43434300 0%, rgba(0, 0, 0, 0.562) 100%), url(./img/fachamessi.jpg);
