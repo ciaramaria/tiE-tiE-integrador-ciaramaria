@@ -34,15 +34,23 @@
     outline: none;
     width: 180px;
     height: 40px;
-    color: wheat;
-    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
     cursor: pointer;
     transition: all 0.4s linear;
+    border-radius: .6em;
+    margin-top: 2em;
+    text-transform:uppercase;
+    /* text-shadow: 1px 1px 0px rgb(6, 3, 3); */
+    
 }
 
 button:hover {
-    background-color: rgba(233, 180, 228, 0.116);
+    background-color: wheat;
+    color: black;
+    font-weight: 900;
     transition: all 0.4s linear;
+    text-shadow: none;
 }
 
 .section-title {
@@ -137,12 +145,12 @@ body {
 }
 .navbar-list {
     display: flex;
-    gap: 40px;
+    gap: 50px;
 }
 
 /* borde lista */
 .navbar-list li {
-    padding: 20px;
+    padding: 10px;
     border-right: 1px solid rgba(0, 0, 0, 0.075);
 }
 
@@ -274,6 +282,7 @@ body {
 } */
 }
 
+
 /**termina el media*/
 
 /**HEROOOO/***/
@@ -288,12 +297,13 @@ body {
 .description-container {
     display: flex;
     flex-direction: column;
-    flex: 1 1 50%;
-    gap:90px;
+    flex: 1 1 30%;
+    gap: 30px;
 }
 
 .text-container {
     max-width: max(40%, 300px);
+
 }
 
 .text-container p {
@@ -313,15 +323,58 @@ body {
 
 }
 
+/* imagen derecha de navegador */
+
+.imagen-hero {
+    
+    background-image: url(./img/fachamessi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 30%;
+    width: 40%;
+    height: 400px;
+    border-radius: 9px;
+    transform: scaleX(-1);
+}
 
 
+/* * empeizo el media del hero */
 
-.btn-primary {
 
+@media (max-width: 768px) {
+
+
+.imagen-hero {
+    display: none;
+}
+
+.description-container {
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.button {
+    text-align: center;
 }
 
 
 
+
+
+
+
+
+
+}
 
 
 
