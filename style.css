@@ -32,7 +32,7 @@
     background-color: var(--lila);
     border: 0px solid black;
     outline: none;
-    width: 180px;
+    width: 160px;
     height: 40px;
     color: rgb(255, 255, 255);
     font-weight: 900;
@@ -45,7 +45,7 @@
     
 }
 
-button:hover {
+.button:hover {
     background-color: wheat;
     color: black;
     font-weight: 900;
@@ -84,6 +84,7 @@ con el cel o tablet */
 
 html {
     scroll-behavior:smooth;
+    scroll-padding-top: 100px;
 }
 
 body {
@@ -363,16 +364,115 @@ body {
     text-align: center;
 }
 
+}
 
+/** termina el MEDIA DEL HERO  */
 
+/** COMIENZO SECCION PRODUCTOS * */
 
+#products {
+    flex-direction: column;
+    gap: max(120px, 10%);
+}
+.title-container h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-shadow: 2px 4px 0px rgba(146, 117, 117, 0.98);
+    
+}
 
+/* speaker-cards-container */
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+    gap: 90px;
+}
+/* speakcer card */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 210px;
+    height: 310px;
+    position: relative;
+    padding-top: 50px;
+    mix-blend-mode: difference;
+    color:white; filter:alpha(opacity=100); opacity:1;
+    box-shadow: 10px 10px 23px 3px rgba(255,255,255,0.02);
+}
 
+/* speck card img */
 
+.card-img {
+    width: 170px;
+    height: 200px;
+    border-radius: 10%;
+    background-color: wheat;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-size: cover;
+    position: absolute;
+    top: -20px;
+    font-weight: 300;
+    border-top: 12em;
+    color: white;
+}
 
-
+.card-content {
+   
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+ 
 
 }
+
+/* clase href comprar */
+
+.href {
+    text-decoration: none;
+    color: white;
+    font-size: em;
+    font-weight: 600;
+    margin: 0 auto;
+
+
+} 
+
+/* titulo carta */
+.card-content h3{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 8rem;
+}
+
+
+
+.card:first-child .card-img{
+    background-image: url(./img/azul.png);
+}
+.card:nth-child(2) .card-img {
+    background-image: url(./img/roja.png);
+}
+.card:nth-child(3) .card-img {
+    background-image: url(./img/negra.png);
+}
+.card:nth-child(4) .card-img {
+    background-image: url(./img/bordo.png);
+}
+
+
+/* *************************************** */
+
+
 
 
 
