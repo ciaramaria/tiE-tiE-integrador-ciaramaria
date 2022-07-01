@@ -11,7 +11,7 @@
 
 :root {
     --black: #0d0e14;
-    --lila: rgba(233, 180, 228, 0.562);
+    --lila: #e9b4e48f;
 }
 
 .section-container {
@@ -152,13 +152,10 @@ body {
 
 
 
-
-
-
 /* div navbar */
 
 
-.navbar .navbar-list  {
+.navbar .navbar-list {
     /* display: none; */
     /* align-items: center;
     justify-content: center; */
@@ -166,21 +163,21 @@ body {
 }
 .navbar-list {
     display: flex;
-    gap: 60px;
+    gap: 50px;
 }
 
 /* borde lista */
 .navbar-list li {
     padding: 10px;
     border-right: 1px solid rgba(0, 0, 0, 0.075);
-    ;
 }
 
 /* icono navbar */
 
 .navbar i {
-    font-size: 30px;
+    font-size: 40px;
     cursor: pointer;
+    /* color: aliceblue; */
     display: none;
 }
 
@@ -188,8 +185,6 @@ body {
 #toggle-menu {
     display: none;
 }
-
-
 
 /* navbar a */
 
@@ -233,6 +228,50 @@ body {
 
     /* acceder */
 
+    /* submenu */
+
+    .header {
+
+    }
+
+    header .navbar ul li {
+        position: relative;
+        float: left;
+    }
+
+    header .navbar ul li ul {
+        position: absolute;
+        width: 150px;
+        left: 0;
+        background-color: var(--lila);
+        display: none;
+        list-style: none;
+        text-align: center;
+        margin: 2px;
+        border-radius: .5em;
+    }
+
+    header .navbar ul li ul li {
+        width: 100%;
+
+    }
+
+    header .navbar ul li ul li ul {
+        left: 200px;
+        top: 0;
+    }
+
+    header .navbar ul li:focus-within > ul,
+    header .navbar ul li:hover > ul {
+    display: initial ;
+    top: 100%;
+    transition: all 1s linear;
+    background: #fcc8f78f;
+    }
+
+
+
+
     .navbar-list li:nth-child(4) {
     background: var(--lila);
     box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.1);
@@ -245,70 +284,8 @@ body {
     transition: all 0.1s linear;
     background: none;
     box-shadow:none;
-    display: flex;
     
 }
-
-/* submenu */
-
-
-.navbar {
-    position: relative;
-}
-
-.header .navbar ul li{
-    position: relative;
-    float: left;
-}
-
-header .navbar ul li ul  {
-    position: absolute;
-    width: 180px;
-    left: 0;
-    display: none;
-    list-style: none;
-    text-align: center;
-}
-
-header .navbar ul li ul li {
-    width: 100%;
-}
-
-header .navbar ul li ul li ul {
-    left: 200px;
-    top: 0;
-}
-header .navbar ul li:focus-within > ul,
-header .navbar ul li:hover > ul{
-display: initial;
-}
-
-
-
-/* .navbar-list > li{
-    position: relative;
-    display: inline-block;
-}
-
- .submenu {
-    position: absolute;
-    list-style: none;
-    background:#bc9abd ;
-    border-radius: .4em;
-    display: none ;
-}
-
-
-
-.submenu a:hover {
-      
-        
-        color: white;
-        text-decoration: none;
-        background-color: red; 
-} */
-
-
 
 
 /** media query */
@@ -583,15 +560,15 @@ display: initial;
     flex-wrap: wrap;
     gap: 70px;
     padding: 30px;
-    background-color: red;
 }
+
+/* tidis kis derechos */
 
 .footer-msg {
     text-align: center;
     font-weight: 700;
     font-size: 24px;
     max-width: 450px;
-    background: blue;
 }
 .footer-info {
     display: flex;
@@ -600,24 +577,21 @@ display: initial;
     align-items: flex-end;
     font-size: 14px;
     min-height: 100px;
-    background: coral;
 }
 
 .footer-social i:last-child{
     margin-left: 10px;
-    background: crimson;
 }
 
 .footer-terms {
     display: flex;
     gap: 20px;
-    background:cornflowerblue ;
 }
 
 .footer-terms a {
     color: white;
     font-weight: 300;
-    background: cor;
+    
 }
 
 @media (max-width: 945px) {
