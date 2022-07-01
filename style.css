@@ -517,6 +517,8 @@ body {
     padding: 30px;
 }
 
+/* tidis kis derechos */
+
 .footer-msg {
     text-align: center;
     font-weight: 700;
@@ -544,6 +546,12 @@ body {
 .footer-terms a {
     color: white;
     font-weight: 300;
+    
+}
+
+@media (max-width: 945px) {
+
+    .footer: 
 }
 
 
