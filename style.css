@@ -25,7 +25,7 @@
     margin: 0 auto;
     padding: 70px 0px;
     width: 95%;
-    max-width: 1300px;
+    max-width: 1500px;
 }
 
 .button {
@@ -74,7 +74,7 @@ con el cel o tablet */
 
 .header-container {
     position: sticky;
-    top: 0%;
+    top: 0;
     z-index: 9999;
 }
 
@@ -92,17 +92,34 @@ body {
     color: white;
     /* max-width: 75ch; */
     background-color: #0d0e14d0;
+    
 
 }
 
+/** EMPIEZOPOOOO  */
+
+/* envios */
+
+.envios {
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #1e202c8f;
+    height: 16px;
+}
+
+
+
 .header {
     margin: 0 auto;
-    max-width: 1300px;
-    height: 100px;
+    /* max-width: 1300px; */
+    height: 70px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0px 10px 0px 10px;
+    background-color: #13151d8f;
+    
 }
 
 /* div contenedor logo */
@@ -160,7 +177,7 @@ body {
 .navbar i {
     font-size: 40px;
     cursor: pointer;
-    color: aliceblue;
+    /* color: aliceblue; */
     display: none;
 }
 
@@ -173,10 +190,11 @@ body {
 
 .navbar a {
     color: whitesmoke;
-    font-size: 20px;
+    font-size: 17px;
     text-transform: uppercase;
     text-decoration: none;
 }
+/* colores login */
 
 
 
@@ -196,6 +214,7 @@ body {
 
 
 
+
 /* hover del navbar */
 
 .navbar-list li a:hover {
@@ -205,21 +224,23 @@ body {
     transition: all 0.1s linear;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.51);
     padding: 1px 2px;
-
 }
 
+    /* acceder */
 
-/* hover del navbar "inicio" */
-
-.navbar-list li:first-child > a {
-    background-color: rgba(0, 0, 0, 0.055);
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    font-weight: 900;
-    transition: all 0.2s linear;
-    border: none;
-    border-radius: 2px;
-    text-shadow: 5px 4px 0px rgba(0,0,0,1);}
+    .navbar-list li:nth-child(4) {
+    background: var(--lila);
+    box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.navbar-list li:nth-child(4) a:hover {
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.1s linear;
+    background: none;
+    box-shadow:none;
+}
 
 
 /** media query */
@@ -229,6 +250,7 @@ body {
 
     .header {
         padding: 0px 35px 0px 5px;
+        justify-content: space-between;
     }
 
 /* bloqueo hamburguesita */
@@ -242,7 +264,7 @@ body {
     
         display:flex;
     }
-   
+
     .navbar .navbar-list {
         display: none;
         align-items: center;
@@ -256,7 +278,7 @@ body {
     position: absolute;
     background-color: var(--black);
     flex-direction: column;
-    top: 100px; /*esto es para q no se vaya arriba y baje 100px del top*/
+    top: 115px; /*esto es para q no se vaya arriba y baje 100px del top*/
     right: 0;
     width: 100%;
     height: calc(100vh - 100px); /*para que siempre este al 100 en la pantalla*/
@@ -292,7 +314,8 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 70px 50px;
+    padding: 120px 100px;
+    background: #0d0e14ef;
 }
 
 .description-container {
@@ -300,6 +323,7 @@ body {
     flex-direction: column;
     flex: 1 1 30%;
     gap: 30px;
+    
 }
 
 .text-container {
@@ -387,7 +411,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 40%;
+    width: 70%;
     gap: 90px;
 }
 /* speakcer card */
@@ -468,12 +492,68 @@ body {
 .card:nth-child(4) .card-img {
     background-image: url(./img/bordo.png);
 }
+.card:nth-child(5) .card-img {
+    background-image: url(./img/negra.png);
+}
+.card:nth-child(6) .card-img {
+    background-image: url(./img/bordo.png);
+}
+
+
+/* creo que no tiene media hasta ahora */
+
+
+/** termino HERO  */
+
+/** EMPIEZO FOOTER  */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 70px;
+    padding: 30px;
+}
+
+.footer-msg {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    max-width: 450px;
+}
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 14px;
+    min-height: 100px;
+}
+
+.footer-social i:last-child{
+    margin-left: 10px;
+}
+
+.footer-terms {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-terms a {
+    color: white;
+    font-weight: 300;
+}
+
+
+
 
 
 /* *************************************** */
 
 
-
+    
 
 
 
