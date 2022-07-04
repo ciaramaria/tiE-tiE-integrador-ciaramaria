@@ -287,6 +287,41 @@ body {
     
 }
 
+/* LOGIN */
+
+
+
+.submenu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.login {
+	width: 320px;
+	padding: 30px;
+	padding-top: 156px;
+    
+    border-radius: 1rem;
+}
+
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+
 
 /* BUSCADOR */
 
@@ -652,6 +687,10 @@ body {
     font-weight: 300;
     
 }
+
+
+/* * media footer */
+
 
 @media (max-width: 945px) {
 
