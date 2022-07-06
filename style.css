@@ -589,7 +589,7 @@ body {
 .href {
     text-decoration: none;
     color: white;
-    font-size: em;
+    font-size: .6em;
     font-weight: 600;
     margin: 0 auto;
     
@@ -597,8 +597,12 @@ body {
 
 .card-content p {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
+
 
 /* titulo carta */
 .card-content h3{
