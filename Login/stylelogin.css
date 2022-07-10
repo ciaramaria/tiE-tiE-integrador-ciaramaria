@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;700&display=swap');* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+}
+
+
+/*** VARIABLES */
+
+:root {
+    --black: #0d0e14;
+    --lila: #e9b4e48f;
+}
+
+body {
+  overflow: hidden;
+  background-image: url(../img/fachamessigirad.jpg);
+  background-size: cover;
+    min-height: 100vh;
+}
+
+
+.section-container {
+  height: auto;
+  width: auto;
+   position: relative;
+ 
+}
+
+.img-login {
+  width: 70px;
+}
+
+.sign-up-form {
+  width: 500px;
+  height: 600px;
+  background: #ffc7f909;
+  border-radius: .3rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  margin-left: 10%; 
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
+
+}
+
+
+.sign-up-form h1 {
+  color: #59628b;
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.input-box {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  border: 1px solid #999;
+  outline: none;
+}
+
+.terminos {
+  margin: 5px;
+}
+
+.button {
+  background-color: var(--lila);
+  border: 0px solid black;
+  outline: none;
+  width: 160px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  border-radius: .1em;
+  margin: 2em 0 2em 0;
+  text-transform:uppercase;
+  text-shadow: 1px 1px 0px rgb(6, 3, 3); 
+  
+ }
+
+.button:hover {
+  background-color: wheat;
+  color: black;
+  font-weight: 900;
+  transition: all 0.4s linear;
+  text-shadow: none;
+} 
+hr {
+  margin-top: 20px;
+}
+
+.registrate {
+  margin-top: 20px;
+}
+
+.sign-up-form a {
+  color: #59628b;
+
+}
+
+
+
+
+@media (max-width:624px){
+  
+  .sign-up-form {
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** termino HERO  */
+
+/** EMPIEZO FOOTER  */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 70px;
+    padding: 30px;
+}
+
+/* tidis kis derechos */
+
+.footer-msg {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    max-width: 450px;
+}
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 14px;
+    min-height: 100px;
+}
+
+.footer-social i:last-child{
+    margin-left: 10px;
+}
+
+.footer-terms {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-terms a {
+    color: white;
+    font-weight: 300;
+    
+}
+
+@media (max-width: 945px) {
+
+.footer-info {
+
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+/* *************************************** */
+}

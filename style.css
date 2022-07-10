@@ -230,10 +230,6 @@ body {
 
     /* submenu */
 
-    .header {
-
-    }
-
     header .navbar ul li {
         position: relative;
         float: left;
@@ -543,10 +539,10 @@ body {
     color:white; filter:alpha(opacity=100); opacity:1;
     box-shadow: 10px 10px 23px 3px rgba(255,255,255,0.03);
     cursor:grabbing;
-    transition: 0.7s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 .card:hover {
-    transform: rotateY(360deg);
+    transform: translateY(-20px);
 
 }
 
