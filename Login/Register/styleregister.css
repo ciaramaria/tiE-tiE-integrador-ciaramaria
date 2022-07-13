@@ -16,9 +16,10 @@
 
 body {
   overflow: hidden;
-  background-image: url(../img/fachamessigirad.jpg);
+  background-image: url(/img/scaloooooooooooo.jpg);
   background-size: cover;
     min-height: 100vh;
+    
 }
 
 
@@ -26,7 +27,8 @@ body {
   height: auto;
   width: auto;
    position: relative;
-   margin: 0 auto;
+    margin: 0 auto;
+ 
 }
 
 .img-login {
@@ -35,7 +37,7 @@ body {
 
 .sign-up-form {
   width: 500px;
-  height: 600px;
+  height: 700px;
   background: #ffc7f909;
   border-radius: .3rem;
   text-align: center;
@@ -45,10 +47,10 @@ body {
   flex-direction: column;
   position: absolute;
   flex-wrap: wrap;
-  margin-top: 10%;
+  margin-top: 8%;
   margin-left: 10%; 
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
-
+  /* box-shadow: -3px -3px 15px 0px rgba(0, 0, 0, 0.307); */
+  box-shadow: 0px 0px 100px -13px rgba(0,0,0,0.75);
 }
 
 
@@ -71,12 +73,9 @@ body {
   
 }
 
-.input-box:hover {
-  background: rgb(229, 224, 216);
-}
-
 .terminos {
   margin: 7px;
+  text-shadow: 1px 1px 1px rgb(6, 3, 3); 
 }
 
 .button {
@@ -97,31 +96,18 @@ body {
  }
 
 .button:hover {
-  background: wheat;
+  background-color: wheat;
   color: black;
   font-weight: 900;
   transition: all 0.4s linear;
   text-shadow: none;
-  
 } 
-
-
 hr {
   margin-top: 20px;
 }
 
 .registrate {
   margin-top: 20px;
-  color: white;
-}
-form> .registrate a {
-  color: var(--lila);
-  text-decoration: none;
-}
-
-form> .registrate a:hover {
-  color: #59628b;
-  font-size: 15px;
 }
 
 .sign-up-form a {
