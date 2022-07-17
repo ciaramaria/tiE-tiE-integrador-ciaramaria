@@ -455,15 +455,13 @@ body {
 
 .imagen-hero {
     
-    background-image: url(./img/fachamessi.jpg);
+    background-image: url(./img/Messi-AP.png);
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     min-width: 30%;
     width: 40%;
-    height: 400px;
-    border-radius: 9px;
-    transform: scaleX(-1);
+    height: 600px;
+    border-radius: 15px;
 }
 
 
@@ -758,4 +756,4 @@ body {
     background: rgba(233, 180, 228, 0.562);
     border-radius: 5px;
     margin-top: 10px;
-} */
+} */}
