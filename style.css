@@ -411,13 +411,22 @@ header .navbar ul li ul li {
     position: absolute;
     background-color: var(--black);
     flex-direction: column;
-    top: 115px; /*esto es para q no se vaya arriba y baje 100px del top*/
+    top: 105px; /*esto es para q no se vaya arriba y baje 100px del top*/
     right: 0;
     width: 100%;
     height: calc(100vh - 100px); /*para que siempre este al 100 en la pantalla*/
     /*z-index: 9999;*/ /*para que este encima de todo*/
+    transition: 0.1s ease-in-out;
+}
+.navbar-list:hover {
+    transform: translateY(-30px);
 
 }
+
+
+
+
+
 .navbar-list li {
     border: none;
 }
