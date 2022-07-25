@@ -160,13 +160,14 @@ body {
 }
 .navbar-list {
     display: flex;
-    gap: 50px;
+    gap: 20px;
+    
 }
 
 /* borde lista */
 .navbar-list li {
-    padding: 10px;
-    border-right: 1px solid rgba(0, 0, 0, 0.075);
+    padding: 20px;
+    /* border-right: 1px solid rgba(0, 0, 0, 0.075); */
 }
 
 /* icono navbar */
@@ -174,7 +175,6 @@ body {
 .navbar i {
     font-size: 40px;
     cursor: pointer;
-    /* color: aliceblue; */
     display: none;
 }
 
@@ -294,7 +294,6 @@ header .navbar ul li ul li {
 	width: 320px;
 	padding: 30px;
 	padding-top: 156px;
-    
     border-radius: 1rem;
 }
 
@@ -322,6 +321,7 @@ header .navbar ul li ul li {
     width: fit-content;
     height: fit-content;
     position: relative;
+    
 }
 .input-search{
     height: 50px;
@@ -384,7 +384,6 @@ header .navbar ul li ul li {
         justify-content:space-around;
     }
 
-    /* logo */
 
 
 
@@ -461,10 +460,10 @@ header .navbar ul li ul li {
 
 .text-container h1 {
     font-size: 123px ;
-    margin-bottom: 10px;
     text-shadow: 3px 3px 0px rgba(255,255,255,0.67);    
     line-height: 110px;
     font-weight: 900;
+    line-height: 130px;
 
 }
 
@@ -654,7 +653,39 @@ header .navbar ul li ul li {
 
 }
 
-/* creo que no tiene media hasta ahora */
+/* **CONTACTO FORMULARIO* */
+
+.formulario {
+width: 80%;
+max-width: 800px;
+/* background: red; */
+padding: 30px 40px;
+box-shadow: 0px 0px 42px 24px rgba(0,0,0,0.46);
+text-align: center;
+height: 600px;
+border-radius: 1em;
+}
+
+form {
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.form-txt {
+border: 1px solid gray;
+margin: 8px 0;
+border-radius: .5em;
+padding: 12px 18px;
+width: 95%;
+
+
+}
+
+
+
+
 
 
 /** termino HERO  */
