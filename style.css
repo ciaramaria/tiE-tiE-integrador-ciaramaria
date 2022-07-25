@@ -321,7 +321,6 @@ header .navbar ul li ul li {
     width: fit-content;
     height: fit-content;
     position: relative;
-    
 }
 .input-search{
     height: 50px;
@@ -520,7 +519,8 @@ header .navbar ul li ul li {
 /* titulo productos */
 .title-container h2 {
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: calc(2em + 2vw);
+    max-width: 90%;
     text-shadow: 2px 4px 0px rgba(146, 117, 117, 0.98);
     
 }
@@ -561,20 +561,17 @@ header .navbar ul li ul li {
 
 .card-img {
     width: 250px;
+    max-width: 80%;
     height: 300px;
     border-radius: 2%;
     background-color: wheat;
-    /* font-size: 50px; */
-    /* display: flex;
-    align-items: center;
-    justify-items: center; */
     background-size: cover;
     position: absolute;
     top: -20px;
     font-weight: 300;
     border-top: 12em;
     color: white;
-    max-width: max(50%, 170px );
+    max-width: max(10%, 200px);
 
 }
 
@@ -695,13 +692,14 @@ width: 95%;
 .footer {
     display: flex;
     justify-content: space-around;
-    /* max-width: 1500px; */
     margin: 0 auto;
     flex-wrap: wrap;
     gap: 70px;
     padding: 30px;
     background-image: url(./img/corbatas/fondo\ mama.jpg);
 }
+
+
 
 /* tidis kis derechos */
 
@@ -734,6 +732,7 @@ width: 95%;
     font-weight: 700;
     
 }
+
 
 
 /* * media footer */
